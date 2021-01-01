@@ -1,0 +1,14 @@
+### Python ###
+
+# Byte-compiled files
+__pycache__/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# User-specific files
+codes/experimentation
+deprecated/
+documents/
+data/
+visualizations/
