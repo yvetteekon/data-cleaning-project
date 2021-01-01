@@ -4,7 +4,7 @@ Goals:
 - To demonstrate an understanding of how to refactor data cleaning steps in experimentation phase of a project into functions for easy readability and reusability of functions in future projects.
 
 ### Data Sources
-1. DB of 6M+ restaurant supplies and equipment [Kaggle](https://www.kaggle.com/codemysteries/salesdb)
+1. DB of 6M+ records of groceries sold by a wholesale restaurant supply chain store[Kaggle](https://www.kaggle.com/codemysteries/salesdb)
 
 2. us census bureau regions and divisions.csv [cphalpert/census-regions](https://github.com/cphalpert/census-regions/blob/master/us%20census%20bureau%20regions%20and%20divisions.csv)
 
