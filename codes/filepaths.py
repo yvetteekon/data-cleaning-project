@@ -27,9 +27,10 @@ interim_countries_data = os.path.join(INTERIM_DIR, 'countries_cleaned_v1.csv')
 interim_cities_data = os.path.join(INTERIM_DIR, 'cities_cleaned_v1.csv')
 interim_sales_data = os.path.join(INTERIM_DIR, 'sales_cleaned_v1.csv')
 interim_products_data_v2 = os.path.join(INTERIM_DIR, 'products_cleaned_v2.csv')
+interim_sales_db = os.path.join(INTERIM_DIR, 'salesdb.sqlite')
 
 #processed data directories
-processed_merged_data = os.path.join(PROCESSED_DIR, 'merged_data.csv')
+processed_merged_data = os.path.join(PROCESSED_DIR, 'master_file.csv')
 processed_produce_data = os.path.join(PROCESSED_DIR, 'produce_data.csv')
 processed_produce_data_metric_features = os.path.join(PROCESSED_DIR, 'produce_data_metric_features.csv')
 
