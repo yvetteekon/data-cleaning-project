@@ -18,6 +18,24 @@ import preprocessing as pp
 import filepaths
 
 
+def preprocess_customer_data(outfile_path):
+    #load data
+    df = pd.read_csv(filepaths.raw_customers_data, sep=';')
+    df_names_and_gender = pd.read_excel(filepaths.external_names_and_gender_data, sheet_name='Sheet1')
+    
+    #clean data
+    df = pd.merge(df, df_names_and_gender[['Name', 'Gender']], left_on='FirstName', right_on='Name', how='left')
+    df = df.drop_duplicates(subset=['CustomerID'])
+    feature_list = ['Gender']
+    nan_replacements = 'F'
+    df = pp.impute_nan(df, feature_list, nan_replacements=nan_replacements)
+    df.drop(['Name'], axis=1, inplace=True)
+    
+    #export data
+    df.to_csv(outfile_path, index=False)
+    
+    return df
+
 def preprocess_employee_data(outfile_path):
     #load data
     df = pd.read_csv(filepaths.raw_employees_data, sep=';')

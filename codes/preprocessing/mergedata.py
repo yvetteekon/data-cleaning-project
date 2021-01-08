@@ -20,7 +20,7 @@ def merge_data(outfile_path, extraction_date=None):
         extraction_date = '2018-05-09'
     
     #load data
-    df_customers = pd.read_csv(filepaths.raw_customers_data, sep=';')
+    df_customers = pd.read_csv(filepaths.interim_customers_data)
     df_employees = pd.read_csv(filepaths.interim_employees_data)
     df_countries = pd.read_csv(filepaths.interim_countries_data)
     df_cities = pd.read_csv(filepaths.interim_cities_data)
@@ -29,9 +29,11 @@ def merge_data(outfile_path, extraction_date=None):
 
     #city + customer data
     df_cities = df_cities[['CityID', 'CityName', 'State.clean', 'Region', 'Division']]
-    df_customers = df_customers[['CustomerID', 'CityID']]
+    df_customers = df_customers[['CustomerID', 'CityID', 'FirstName', 'MiddleInitial', 'LastName', 'Gender']]
     df_customers = pd.merge(df_customers, df_cities, on='CityID', how ='left')
-    df_customers = df_customers.rename(columns={'CityName':'CityName.customer', 'State.clean':'State.customer'})
+    df_customers = df_customers.rename(columns={'CityName':'CityName.customer', 'State.clean':'State.customer',
+                                               'FirstName':'FirstName.customer', 'LastName':'LastName.customer',
+                                               'Gender':'Gender.customer'})
 
     #city + employee data
     df_employees['EmployeeAge'] = round((pd.to_datetime(extraction_date) - pd.to_datetime(df_employees['BirthDate']))/np.timedelta64(1,'Y'))

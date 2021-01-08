@@ -7,7 +7,9 @@ from .preprocessing import create_invoice_no
 from .preprocessing import create_sequential_identifier
 from .preprocessing import categorize_items
 from .preprocessing import generate_state_given_city
+from .preprocessing import categorize_customers
 
+from .preprocessdata import preprocess_customer_data
 from .preprocessdata import preprocess_employee_data
 from .preprocessdata import preprocess_country_data
 from .preprocessdata import preprocess_city_data
@@ -17,3 +19,5 @@ from .preprocessdata import preprocess_sales_data
 from .mergedata import merge_data
 
 from .generatedata import generate_produce_data
+
+from .generateanalysis import rfm_analysis

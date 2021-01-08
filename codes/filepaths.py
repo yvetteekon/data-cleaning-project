@@ -20,8 +20,10 @@ interim_products_data_v1 = os.path.join(INTERIM_DIR, 'products_cleaned_v1.csv')
 
 #external data directories
 external_us_regions_data = os.path.join(EXTERNAL_DIR, 'us census bureau regions and divisions.csv')
+external_names_and_gender_data = os.path.join(EXTERNAL_DIR, 'SSA_Names_DB.xlsx')
 
 #interim data directories
+interim_customers_data = os.path.join(INTERIM_DIR, 'customers_cleaned_v1.csv')
 interim_employees_data = os.path.join(INTERIM_DIR, 'employees_cleaned_v1.csv')
 interim_countries_data = os.path.join(INTERIM_DIR, 'countries_cleaned_v1.csv')
 interim_cities_data = os.path.join(INTERIM_DIR, 'cities_cleaned_v1.csv')
@@ -32,5 +34,5 @@ interim_sales_db = os.path.join(INTERIM_DIR, 'salesdb.sqlite')
 #processed data directories
 processed_merged_data = os.path.join(PROCESSED_DIR, 'master_file.csv')
 processed_produce_data = os.path.join(PROCESSED_DIR, 'produce_data.csv')
-processed_produce_data_metric_features = os.path.join(PROCESSED_DIR, 'produce_data_metric_features.csv')
+processed_produce_customer_segments = os.path.join(PROCESSED_DIR, 'produce_purchase_customer_segments.csv')
 

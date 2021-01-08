@@ -91,6 +91,17 @@ def categorize_items(df, item_feature, new_category_feature, items_dict):
     return df
 
    
-        
+def categorize_customers(rfm_score):
+    x = rfm_score
+    if (x == '111'):
+        return 'best customers'
+    elif (x == '311'):
+        return 'almost lost'
+    elif (x == '411'):
+        return 'lost customers'
+    elif (x == '444'):
+        return 'lost cheap customers'
+    else:
+        return 'other'        
 
 
