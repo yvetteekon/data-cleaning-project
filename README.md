@@ -1,7 +1,7 @@
 # data-cleaning-project
 ### Project Summary: 
 
-- Preprocessed 6M+ retail transactions data. The raw data was manipulated to correct some of the feature values to make them more intuitive.
+Preprocessed 6M+ retail transactions data. The raw data was manipulated to correct and make some feature values more intuitive.
 
 ### Lessons Learned
 1. Refactoring of code.
