@@ -1,10 +1,15 @@
-# restaurant-supply-analytics
-Goals: 
+# data-cleaning-project
+### Project Summary: 
 
-- To demonstrate an understanding of how to refactor data cleaning steps in experimentation phase of a project into functions for easy readability and reusability of functions in future projects.
+- Preprocessed 6M+ retail transactions data. The raw data was manipulated to correct some of the feature values to make them more intuitive.
+
+### Lessons Learned
+1. Refactoring of code.
+
+2. How to create a custom python package for internal use.
 
 ### Data Sources
-1. DB of 6M+ records of groceries sold by a wholesale restaurant supply chain store [Kaggle](https://www.kaggle.com/codemysteries/salesdb)
+1. Database of 6M+ records of groceries sold by a wholesale restaurant supply chain store [Kaggle](https://www.kaggle.com/codemysteries/salesdb)
 
 2. us census bureau regions and divisions.csv [cphalpert/census-regions](https://github.com/cphalpert/census-regions/blob/master/us%20census%20bureau%20regions%20and%20divisions.csv)
 
