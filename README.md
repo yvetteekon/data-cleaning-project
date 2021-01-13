@@ -1,5 +1,5 @@
 # data-cleaning-project
-### Project Summary: 
+### Project Summary
 
 Preprocessed 6M+ retail transaction records. The raw data was manipulated to correct and make some feature values more intuitive.
 
