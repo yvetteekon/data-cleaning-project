@@ -21,6 +21,7 @@ interim_products_data_v1 = os.path.join(INTERIM_DIR, 'products_cleaned_v1.csv')
 #external data directories
 external_us_regions_data = os.path.join(EXTERNAL_DIR, 'us census bureau regions and divisions.csv')
 external_names_and_gender_data = os.path.join(EXTERNAL_DIR, 'SSA_Names_DB.xlsx')
+external_us_state_lat_long_data = os.path.join(EXTERNAL_DIR, 'statelatlong.csv')
 
 #interim data directories
 interim_customers_data = os.path.join(INTERIM_DIR, 'customers_cleaned_v1.csv')
