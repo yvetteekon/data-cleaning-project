@@ -1,4 +1,4 @@
-# data-cleaning-project
+# Data-Cleaning-Project
 ### Project Summary
 
 Preprocessed 6M+ sales transaction records. The raw data was manipulated to correct and make some feature values more intuitive.
