@@ -1,4 +1,5 @@
 # Data-Cleaning-Project
+![I am GitHub Readme Generator's creator](https://github.com/yvetteekon/yvetteekon/blob/main/wholesale-analytics-new.jpg)
 ### Project Summary
 
 Preprocessed 6M+ sales transaction records. The raw data was manipulated to correct and make some feature values more intuitive.
